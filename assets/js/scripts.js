@@ -221,12 +221,13 @@
   if ($(".yt-slider")[0]) {
     console.log("yt slider found ");
     $(".yt-slider").not(".slick-initialized").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      dots: true,
+      centerMode: true,
+      centerPadding: "10px",
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      arrows: true,
+      dots: false,
       speed: 800,
-      fade: true,
       touchThreshold: 200,
       cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
       autoplay: true,
