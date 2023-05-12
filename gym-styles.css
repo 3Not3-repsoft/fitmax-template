@@ -9,20 +9,43 @@
   background-color: #202020;
   border-radius: 10px;
   width: 100%;
+  position: relative;
 }
 
-.gym-card button {
+.gym-card:before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  margin-top: 40px;
+  transform: translate(-50%, -50%);
+  border: 7px solid #f23849;
+  transition: 0.4s ease-in-out;
+  pointer-events: none;
+}
+.gym-card:hover:before {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.gym-card button,
+.gym-details button {
   display: block;
   min-width: max-content;
   background-color: transparent;
   width: 100%;
 }
 
-.gym-card button:first-of-type {
+.gym-card button:first-of-type,
+.gym-details button:first-of-type {
   margin: 1rem 0;
 }
 
-.gym-card button:hover {
+.gym-card button:hover,
+.gym-details button:hover {
   background-color: #f23849;
   color: white;
 }
@@ -31,35 +54,33 @@
   padding: 2.5rem;
 }
 
-.gym-card h3 {
+.gym-card h3,
+.gym-details h3 {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.375rem;
   text-transform: capitalize;
 }
 
-.gym-card h3 > span {
+.gym-card h3 > span,
+.gym-details h3 > span {
   color: #f23849;
 }
 
-.gym-card span > i {
+.gym-card span > i,
+.gym-details span > i {
   color: #f2cb34;
 }
 
-.gym-card h4 {
+.gym-card h4,
+.gym-details h4 {
   font-family: "Roboto";
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 28px;
   text-transform: capitalize;
+  font-weight: 600;
 }
 
 .gym-card p {
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 220%;
   text-transform: capitalize;
 }
 
@@ -114,16 +135,13 @@
   padding: 4rem 0;
 }
 
-.gym-details > .gym-card {
-  margin: 0;
+.gym-details > div > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.gym-details > .gym-card div {
-  padding: 0;
-}
-
-.gym-details > .gym-card div > div {
-  margin: 1.5rem 0;
+.gym-details h4 {
+  margin-bottom: 0.5rem;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
