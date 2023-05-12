@@ -168,8 +168,11 @@
 }
 
 .gym-amenities > div {
-  display: flex;
-  gap: 5rem;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  gap: 1rem;
 }
 
 .gym-amenities {
@@ -177,7 +180,7 @@
 }
 
 .gym-packages {
-  width: 50%;
+  width: 70%;
   margin-bottom: 4rem;
 }
 
@@ -248,7 +251,14 @@
   .gym-image-grid::before {
     display: none;
   }
-  .gym-card button {
-    min-width: fit-content;
+  .gym-details button {
+    min-width: min-content;
+  }
+  .gym-amenities > div {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gym-packages {
+    width: 100%;
   }
 }
