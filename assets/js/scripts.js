@@ -220,7 +220,7 @@
 
   if ($(".yt-slider")[0]) {
     console.log("yt slider found ");
-    $(".yt-slider").slick({
+    $(".yt-slider").not(".slick-initialized").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
