@@ -21,16 +21,17 @@
 }
 
 .product-card {
-  background: #2a2626;
+  background: white;
   border: 2px solid #f23849;
   border-radius: 10px;
   padding: 0;
+  color: black;
 }
 
 .product-grid {
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
@@ -49,12 +50,15 @@
   padding: 2rem;
 }
 
+.product-card span > i {
+  color: #fecb17;
+}
+
 .product-card button {
   margin-top: 1rem;
   background: transparent;
   border-radius: 0;
   border: 1px solid #f23849;
-  color: white;
   padding: 0.5rem 1rem;
 }
 
