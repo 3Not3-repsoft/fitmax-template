@@ -10,16 +10,31 @@
   background: #101010;
   border: 1px solid #f23849;
   border-radius: 30px;
-  width: 40%;
+  max-width: 30%;
   height: min-content;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-.trainer-details > aside > div {
+.triner-card-carousel {
+  width: 100%;
+}
+
+.triner-card-carousel .slick-track {
+  padding: 1rem 0;
+}
+
+.trainer-card-details .slick-list {
+  overflow: visible;
+}
+.triner-card-carousel .slick-arrow {
+  display: none !important;
+}
+
+.trainer-card-details {
   padding: 1rem;
 }
 
-.trainer-details > aside > div > h3 {
+.trainer-card-details > h3 {
   font-family: "Roboto";
   font-weight: 600;
   text-transform: capitalize;
@@ -27,20 +42,23 @@
   color: #f23849;
 }
 
-.trainer-details > aside > div > p > i {
+.trainer-card-details > p > i {
   color: #fecb17;
 }
 
-.trainer-details > aside > div > table {
+.trainer-card-details > table {
   width: 100%;
   margin: 1.5rem 0;
 }
 
-.trainer-details > aside > div > table > tbody > tr > td:first-child {
+.trainer-card-details > table > tbody > tr > td:first-child {
   color: #f23849;
 }
+.trainer-card-details > table > tbody > tr > td:last-child {
+  text-align: end;
+}
 
-.trainer-details > aside > div > button {
+.trainer-card-details > button {
   display: block;
   width: 80%;
   margin: 0 auto;
@@ -48,15 +66,15 @@
   color: white;
   border: 1px solid #f23849;
   border-radius: 30px;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
-.trainer-details > aside > div > button:first-of-type {
-margin-bottom: 1rem;
+.trainer-card-details > button:first-of-type {
+  margin-bottom: 1rem;
 }
 
-.trainer-details > aside > div > button:hover {
-    background-color: #f23849;
+.trainer-card-details > button:hover {
+  background-color: #f23849;
 }
 
 .trainer-details > article > h3,

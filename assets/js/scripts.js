@@ -235,6 +235,23 @@
     });
   }
 
+  if ($(".triner-card-carousel")[0]) {
+    console.log("trainer slider found ");
+    $(".triner-card-carousel").not(".slick-initialized").slick({
+      centerMode: true,
+      centerPadding: "10px",
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      arrows: true,
+      dots: false,
+      speed: 800,
+      touchThreshold: 200,
+      cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
+      autoplay: true,
+      autoplaySpeed: 4500,
+    });
+  }
+
   /* -------------- BEST-TRAINER-SLIDER ------------- */
   if ($(".best-trainer-slider")[0]) {
     $(".best-trainer-slider").slick({
