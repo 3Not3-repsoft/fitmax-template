@@ -694,7 +694,6 @@ header:after {
 
 .header-logo {
   text-align: center;
-  border-top: 1px solid #474747;
   margin-top: 2px;
   padding: 20px 0 19px;
 }
@@ -5926,6 +5925,7 @@ blockquote:before {
 }
 
 .new-navbar {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -5969,4 +5969,15 @@ blockquote:before {
 
 .switch:checked {
   background: #00ed64;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+.new-navbar {
+  justify-content: center;
+  padding: 0;
+}
+.new-navbar > button, .new-navbar > form {
+  display: none;
+}
 }
