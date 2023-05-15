@@ -3,6 +3,8 @@
   margin: 0 auto;
   border: 3px solid #f23849;
   border-radius: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   overflow: hidden;
   padding: 0.5rem;
   font-family: Roboto;
@@ -54,4 +56,23 @@
   border: 1px solid #f23849;
   color: white;
   padding: 0.5rem 1rem;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .store-filters {
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 25px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .store-filters {
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 25px;
+  }
 }

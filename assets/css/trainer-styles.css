@@ -1,0 +1,91 @@
+.trainer-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  text-transform: capitalize;
+  margin: 4rem auto;
+}
+
+.trainer-details > aside {
+  background: #101010;
+  border: 1px solid #f23849;
+  border-radius: 30px;
+  width: 40%;
+  height: min-content;
+  padding: .5rem;
+}
+
+.trainer-details > aside > div {
+  padding: 1rem;
+}
+
+.trainer-details > aside > div > h3 {
+  font-family: "Roboto";
+  font-weight: 600;
+  text-transform: capitalize;
+
+  color: #f23849;
+}
+
+.trainer-details > aside > div > p > i {
+  color: #fecb17;
+}
+
+.trainer-details > aside > div > table {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.trainer-details > aside > div > table > tbody > tr > td:first-child {
+  color: #f23849;
+}
+
+.trainer-details > aside > div > button {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #f23849;
+  border-radius: 30px;
+  padding: .5rem 1rem;
+}
+
+.trainer-details > aside > div > button:first-of-type {
+margin-bottom: 1rem;
+}
+
+.trainer-details > aside > div > button:hover {
+    background-color: #f23849;
+}
+
+.trainer-details > article > h3,
+.trainer-details > article > h4 {
+  margin-bottom: 1rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.trainer-details > article ol {
+  list-style: decimal;
+  padding-left: 1rem;
+}
+
+.trainer-details > article span {
+  color: #f23849;
+}
+
+.trainer-details > article > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.trainer-details > article > div > p {
+  background: #484545;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-family: "Roboto";
+  font-weight: 600;
+}
