@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="assets/css/gym-styles.css" />
+    <link rel="stylesheet" href="assets/css/store.css" />
     <link rel="stylesheet" href="youtube-slider.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -98,6 +99,13 @@
             </ul>
           </nav>
           <form class="search-form">
+            <button
+              type="submit"
+              class="btn mr-3"
+              style="height: unset; padding: 5px 20px !important"
+            >
+              <a href="register.html">Register</a>
+            </button>
             <input
               type="search"
               class="search-form__field"
@@ -383,6 +391,7 @@
               <a href="gym-details.html">
                 <button class="btn">More Details</button></a
               >
+            </div>
           </div>
         </div>
       </div>
@@ -574,109 +583,134 @@
     </section>
     <!-- ============= S-OUT-TRAINER END ============= -->
 
-    <div
-      class="slide-container"
-      style="background-image: url(modules/ui/img/bg-programs.jpg)"
-    >
-      <div
-        class="our-programs-effect"
-        style="background-image: url(modules/ui/img/bg-programs.svg)"
-      ></div>
-      <div class="container">
-        <h2 class="title-decor">Our <span>Store</span></h2>
+    <div class="container">
+      <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2 class="title-decor"><span>Our</span> <span>Products</span></h2>
+        </div>
 
-        <img id="slide-left" class="arrow" src="images/arrow-left.png" />
-        <section class="container" id="slider">
-          <div class="thumbnail">
-            <img src="./images/1.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
+        <div class="col-12">
+          <div class="store-filters">
+            <button class="btn btn-default filter-button" data-filter="all">
+              All Product
+            </button>
+            <button
+              class="btn btn-default filter-button"
+              data-filter="shoes-for-men"
+            >
+              Shoes Wear Men
+            </button>
+            <button
+              class="btn btn-default filter-button"
+              data-filter="nutrition"
+            >
+              Nutrition
+            </button>
+            <button class="btn btn-default filter-button" data-filter="sports">
+              Sports accessories
+            </button>
+          </div>
+        </div>
+        <br />
+
+        <div class="product-grid">
+          <div class="product-card" data-category="shoes-for-men">
+            <img src="assets/img/products/shoes-for-men.png" alt="" />
+            <div>
+              <h3>Shoes For Men</h3>
+              <p>description...</p>
+              <p>
+                Rating&nbsp;
+                <span
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i></span
+                >&nbsp;4.0
+              </p>
+              <button>Add To Cart</button>
             </div>
           </div>
-          <div class="thumbnail">
-            <img src="./images/2.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
+          <div class="product-card" data-category="shoes-for-men">
+            <img src="assets/img/products/shoes-for-men.png" alt="" />
+            <div>
+              <h3>Shoes For Men</h3>
+              <p>description...</p>
+              <p>
+                Rating&nbsp;
+                <span
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i></span
+                >&nbsp;4.0
+              </p>
+              <button>Add To Cart</button>
             </div>
           </div>
-          <div class="thumbnail">
-            <img src="./images/3.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
+          <div class="product-card" data-category="nutrition">
+            <img src="assets/img/products/shoes-for-men.png" alt="" />
+            <div>
+              <h3>Nutrition</h3>
+              <p>description...</p>
+              <p>
+                Rating&nbsp;
+                <span
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i></span
+                >&nbsp;4.0
+              </p>
+              <button>Add To Cart</button>
             </div>
           </div>
-          <div class="thumbnail">
-            <img src="./images/4.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
+          <div class="product-card" data-category="nutrition">
+            <img src="assets/img/products/shoes-for-men.png" alt="" />
+            <div>
+              <h3>Nutrition</h3>
+              <p>description...</p>
+              <p>
+                Rating&nbsp;
+                <span
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i></span
+                >&nbsp;4.0
+              </p>
+              <button>Add To Cart</button>
             </div>
           </div>
-          <div class="thumbnail">
-            <img src="./images/5.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
+          <div class="product-card" data-category="sports">
+            <img src="assets/img/products/shoes-for-men.png" alt="" />
+            <div>
+              <h3>Sports accessories</h3>
+              <p>description...</p>
+              <p>
+                Rating&nbsp;
+                <span
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i></span
+                >&nbsp;4.0
+              </p>
+              <button>Add To Cart</button>
             </div>
           </div>
-          <div class="thumbnail">
-            <img src="./images/6.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
+          <div class="product-card" data-category="sports">
+            <img src="assets/img/products/shoes-for-men.png" alt="" />
+            <div>
+              <h3>Sports accessories</h3>
+              <p>description...</p>
+              <p>
+                Rating&nbsp;
+                <span
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i></span
+                >&nbsp;4.0
+              </p>
+              <button>Add To Cart</button>
             </div>
           </div>
-          <div class="thumbnail">
-            <img src="./images/7.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
-            </div>
-          </div>
-          <div class="thumbnail">
-            <img src="./images/8.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
-            </div>
-          </div>
-          <div class="thumbnail">
-            <img src="./images/9.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
-            </div>
-          </div>
-          <div class="thumbnail">
-            <img src="./images/10.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
-            </div>
-          </div>
-          <div class="thumbnail">
-            <img src="./images/11.png" alt="" />
-            <div class="product-details">
-              <h2>Demo Product</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <a href="#">Add to Cart</a>
-            </div>
-          </div>
-        </section>
-        <img id="slide-right" class="arrow" src="images/arrow-right.png" />
+        </div>
       </div>
     </div>
 
@@ -686,13 +720,13 @@
         <div class="yt-contents">
           <img src="assets/img/yt3.png" alt="" />
         </div>
-        <div  class="yt-contents">
+        <div class="yt-contents">
           <img src="assets/img/yt-1.png" alt="" />
         </div>
-        <div  class="yt-contents">
+        <div class="yt-contents">
           <img src="assets/img/yt3.png" alt="" />
         </div>
-        <div  class="yt-contents">
+        <div class="yt-contents">
           <img src="assets/img/yt-1.png" alt="" />
         </div>
       </div>
@@ -870,6 +904,7 @@
     <script src="assets/js/parallax.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="script.js"></script>
+    <script src="script1.js"></script>
     <script src="youtube-slider.js"></script>
   </body>
 </html>
