@@ -1,25 +1,29 @@
-$(document).ready(function(){
+const filterButtons = document.querySelectorAll(".filter-button");
+const productCards = document.querySelectorAll(".product-card");
 
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            
-            $('.filter').show('1000');
-        }
-        else
-        {
-          
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-        }
+const renderCards = (filter) => {
+  if (filter === "all") {
+    productCards.forEach((card) => (card.style.display = "block"));
+  } else {
+    productCards.forEach((card) => {
+      const cardFilter = card.getAttribute("data-category");
+      console.log(cardFilter);
+      if (cardFilter === filter) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
     });
-    
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
+  }
+};
 
+filterButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    const filter = e.target.dataset.filter;
+    console.log(filter);
+    renderCards(filter);
+  });
 });
+
+// const searchFrom = document.querySelector(".search-from");
+// console.log(searchFrom);

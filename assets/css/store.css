@@ -1,0 +1,84 @@
+.store-filters {
+  width: max-content;
+  margin: 0 auto;
+  border: 3px solid #f23849;
+  border-radius: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  padding: 0.5rem;
+  font-family: Roboto;
+}
+
+.store-filters button {
+  color: #f23849;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+}
+.store-filters button:hover {
+  background-color: #fff;
+}
+
+.product-card {
+  background: white;
+  border: 2px solid #f23849;
+  border-radius: 10px;
+  padding: 0;
+  color: black;
+}
+
+.product-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.product-card h3 {
+  font-family: "Roboto" !important;
+  color: #f23849;
+  font-weight: 600;
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-card > div {
+  padding: 2rem;
+}
+
+.product-card span > i {
+  color: #fecb17;
+}
+
+.product-card button {
+  margin-top: 1rem;
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid #f23849;
+  padding: 0.5rem 1rem;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .store-filters {
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 25px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .store-filters {
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 25px;
+  }
+}

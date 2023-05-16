@@ -70,7 +70,17 @@ img {
   align-items: center;
   margin: 0 auto;
 }
-
+.yt-contents {
+  padding: 15px;
+}
+.slick-center {
+  transform: scale(1.15);
+  transition: all 0.3s;
+}
+.yt-slider-container {
+  max-width: 90%;
+  margin: auto;
+}
 .arrow {
   width: 2rem;
   margin: 0 1rem;

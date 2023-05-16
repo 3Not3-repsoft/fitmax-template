@@ -20,7 +20,7 @@
   font-size: 3rem;
 }
 
-.yt-slider .slick-center {
+/* .yt-slider .slick-center {
   scale: 1.1 !important;
   transition: 500ms ease;
 }
@@ -32,7 +32,7 @@
 
 .yt-slider .slick-track {
   padding: 2rem 0;
-}
+} */
 
 .yt-title {
   font-family: "Roboto";
