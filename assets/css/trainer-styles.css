@@ -7,30 +7,32 @@
 }
 
 .trainer-details > aside {
-  background: #101010;
-  border: 1px solid #f23849;
-  border-radius: 30px;
   max-width: 30%;
   height: min-content;
-  padding: 0.5rem;
 }
 
 .triner-card-carousel {
   width: 100%;
+  margin-bottom: 1rem;
+}
+
+.triner-card-carousel img {
+  height: 25rem;
+  object-fit: contain;
 }
 
 .triner-card-carousel .slick-track {
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 
 .trainer-card-details .slick-list {
   overflow: visible;
 }
-.triner-card-carousel .slick-arrow {
-  display: none !important;
-}
 
 .trainer-card-details {
+  background: #101010;
+  border: 1px solid #f23849;
+  border-radius: 30px;
   padding: 1rem;
 }
 

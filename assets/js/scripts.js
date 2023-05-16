@@ -220,29 +220,53 @@
 
   if ($(".yt-slider")[0]) {
     console.log("yt slider found ");
-    $(".yt-slider").not(".slick-initialized").slick({
-      centerMode: true,
-      centerPadding: "10px",
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: true,
-      dots: false,
-      speed: 800,
-      touchThreshold: 200,
-      cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
-      autoplay: true,
-      autoplaySpeed: 4500,
-    });
+    $(".yt-slider")
+      .not(".slick-initialized")
+      .slick({
+        centerMode: true,
+        centerPadding: "10px",
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        dots: false,
+        speed: 800,
+        touchThreshold: 200,
+        cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
+        autoplay: true,
+        autoplaySpeed: 4500,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 481,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
   }
 
   if ($(".triner-card-carousel")[0]) {
     console.log("trainer slider found ");
     $(".triner-card-carousel").not(".slick-initialized").slick({
       centerMode: true,
-      centerPadding: "10px",
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: true,
+      centerPadding: "30px",
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
       dots: false,
       speed: 800,
       touchThreshold: 200,

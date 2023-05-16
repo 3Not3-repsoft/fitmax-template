@@ -1,3 +1,11 @@
+const searchButton = document.getElementById("search-button");
+const searchField = document.getElementById("search-field");
+console.log(searchButton);
+
+searchButton.addEventListener("click", () => {
+  searchField.style.display = "block";
+});
+
 let thumbnails = document.getElementsByClassName("thumbnail");
 let slider = document.getElementById("slider");
 

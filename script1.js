@@ -24,3 +24,6 @@ filterButtons.forEach((button) => {
     renderCards(filter);
   });
 });
+
+// const searchFrom = document.querySelector(".search-from");
+// console.log(searchFrom);

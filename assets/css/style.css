@@ -539,7 +539,7 @@ header:after {
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   font-family: "Righteous", sans-serif;
@@ -724,6 +724,12 @@ header:after {
   display: flex;
   justify-content: flex-end;
 }
+
+#search-field {
+  display: none;
+  /* opacity: 10%; */
+}
+
 .header-right .search-form__field {
   padding-right: 0;
   padding-left: 10px;
@@ -5925,7 +5931,6 @@ blockquote:before {
 }
 
 .new-navbar {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -5973,11 +5978,12 @@ blockquote:before {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-.new-navbar {
-  justify-content: center;
-  padding: 0;
-}
-.new-navbar > button, .new-navbar > form {
-  display: none;
-}
+  .new-navbar {
+    justify-content: center;
+    padding: 0;
+  }
+  .new-navbar > button,
+  .new-navbar > form {
+    display: none;
+  }
 }
