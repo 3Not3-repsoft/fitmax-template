@@ -62,9 +62,13 @@
   text-align: end;
 }
 
-.trainer-card-details > button {
+.trainer-buttons-wrap {
+  display: flex;
+  width: 60%;
+  margin: auto;
+}
+.trainer-buttons {
   display: block;
-  width: 80%;
   margin: 0 auto;
   background-color: transparent;
   color: white;
@@ -119,5 +123,36 @@
   }
   .trainer-details > aside {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 525px) and (min-width: 321px) {
+  .trainer-details > article > div {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .trainer-buttons {
+    padding: 0.5rem 0.8rem;
+  }
+  .trainer-details {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .trainer-details > article > div {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .trainer-buttons-wrap {
+    width: 65%;
+    margin: auto;
+  }
+  .trainer-buttons {
+    padding: 0.5rem 0.7rem;
+    margin: 0.2rem;
+  }
+  .trainer-details {
+    margin: 0;
   }
 }

@@ -43,3 +43,12 @@
   margin: 2rem 0;
   color: #f23849;
 }
+
+@media screen and (max-width: 525px) {
+  .yt-title {
+    font-size: 32px;
+  }
+  .yt-slider-container {
+    padding: 5rem 0;
+  }
+}

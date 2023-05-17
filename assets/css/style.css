@@ -5703,6 +5703,12 @@ blockquote:before {
   }
 }
 @media (max-width: 575px) {
+  .yt-slider-container {
+    padding: 1rem 0;
+  }
+  .gym-card button {
+    padding: 0;
+  }
   .reviews-list ul {
     padding-left: 15px;
   }
@@ -5985,5 +5991,14 @@ blockquote:before {
   .new-navbar > button,
   .new-navbar > form {
     display: none;
+  }
+  .gym-card button {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .gym-card button {
+    font-size: 0.6rem;
   }
 }

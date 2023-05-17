@@ -262,3 +262,27 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .gym-details > div > button {
+    font-size: 0.7rem;
+  }
+  .empty-table-row {
+    display: none;
+  }
+  .gym-packages table button {
+    padding: 0.2rem 0.3rem;
+  }
+}
+
+@media screen and (max-width: 525px) and (min-width: 321px) {
+  .gym-details > div > button {
+    font-size: 0.8rem;
+  }
+  .empty-table-row {
+    display: none;
+  }
+  .gym-packages table button {
+    padding: 0.3rem 0.5rem;
+  }
+}
