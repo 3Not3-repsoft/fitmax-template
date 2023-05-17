@@ -76,7 +76,10 @@
   border: 1px solid #f23849;
   padding: 0.5rem 1rem;
 }
-
+.product-card button:hover {
+  background: #f23849;
+  color: white;
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .store-filters {
