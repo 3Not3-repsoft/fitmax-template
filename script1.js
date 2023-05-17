@@ -3,13 +3,13 @@ const productCards = document.querySelectorAll(".product-card");
 
 const renderCards = (filter) => {
   if (filter === "all") {
-    productCards.forEach((card) => (card.style.display = "block"));
+    productCards.forEach((card) => (card.style.display = "flex"));
   } else {
     productCards.forEach((card) => {
       const cardFilter = card.getAttribute("data-category");
       console.log(cardFilter);
       if (cardFilter === filter) {
-        card.style.display = "block";
+        card.style.display = "flex";
       } else {
         card.style.display = "none";
       }
