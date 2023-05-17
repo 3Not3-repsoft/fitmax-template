@@ -6002,3 +6002,7 @@ blockquote:before {
     font-size: 0.6rem;
   }
 }
+
+#register-button {
+  min-width: fit-content;
+}
