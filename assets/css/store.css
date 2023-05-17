@@ -21,7 +21,7 @@
 }
 
 .product-card {
-  background: white;
+  background: #575757;
   border: 2px solid #f23849;
   border-radius: 10px;
   padding: 0;
@@ -33,12 +33,15 @@
   cursor: pointer;
   transform: scale(1);
   transition: all 0.3s;
+  color: #fff;
 }
 .product-card:hover {
   /* add good hover effect */
   box-shadow: 0 0 10px #f23849;
   transform: scale(1.05);
   transition: all 0.3s;
+  background: #fff;
+  color: #000;
 }
 .product-grid {
   margin: 1rem auto;
@@ -75,11 +78,10 @@
   border-radius: 0;
   border: 1px solid #f23849;
   padding: 0.5rem 1rem;
-}
-.product-card button:hover {
   background: #f23849;
   color: white;
 }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .store-filters {
