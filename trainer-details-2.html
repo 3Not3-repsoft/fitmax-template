@@ -18,11 +18,9 @@
     <link rel="stylesheet" href="assets/css/bootstrap-grid.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/trainer-styles.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="assets/css/gym-styles.css" />
-    <link rel="stylesheet" href="assets/css/store.css" />
     <link rel="stylesheet" href="youtube-slider.css" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -107,13 +105,10 @@
             <button
               type="submit"
               class="btn mr-3"
-              style="
-                height: unset;
-                padding: 5px 20px !important;
-                min-width: fit-content;
-              "
+              id="register-button"
+              style="height: unset; padding: 5px 20px !important"
             >
-              <a href="register.html">Register With Us</a>
+              <a href="register.html">Register</a>
             </button>
             <input
               type="search"
@@ -135,89 +130,125 @@
       </div>
     </header>
     <!-- =============== HEADER END =============== -->
-
-    <!-- ============== S-OUR-PROGRAMS ============== -->
-    <section
-      class="s-our-programs"
-      style="background-image: url(assets/img/bg-programs.jpg)"
-    >
-      <div class="mask"></div>
-      <div
-        class="our-programs-effect"
-        style="background-image: url(assets/img/bg-programs.svg)"
-      ></div>
-      <div class="container">
-        <h2 class="title-decor">Featured <span>Gym</span></h2>
-        <p class="slogan">
-          Maecenas consequat ex id lobortis venenatis. Mauris id erat enim.
-          Morbi dolor dolor, auctor tincidunt lorem ut, venenatis dapibus miq.
+    <section class="container trainer-details">
+      <aside>
+        <div class="triner-card-carousel">
+          <img class="trainer-details-images" src="assets/img/trainers/trainer 1.jpeg" alt="" />
+          <!-- <img src="assets/img/trainer-square.png" alt="" />
+          <img src="assets/img/trainer-square.png" alt="" />
+          <img src="assets/img/trainer-square.png" alt="" /> -->
+        </div>
+        <div class="trainer-buttons-wrap">
+          <button class="trainer-buttons">Book Now</button>
+          <button class="trainer-buttons">Hire Me</button>
+        </div>
+      </aside>
+      <article>
+        <h3><span>Raja Chaudhri</span></h3>
+        <h4>Weight loss | weight gain | kick boxing | cross fir | high
+          intensity workout</h4>
+        <p>
+          Rating&nbsp;<i class="fa fa-star" aria-hidden="true"></i
+          ><i class="fa fa-star" aria-hidden="true"></i
+          ><i class="fa fa-star" aria-hidden="true"></i
+          ><i class="fa fa-star" aria-hidden="true"></i
+          ><i class="fa fa-star" aria-hidden="true"></i>&nbsp;4.0
         </p>
-        <div class="container gyms">
-          <div class="gym-card">
-            <img src="./assets/img/gym/spartan/Spartan.jpg" alt="" />
-            <div>
-              <h3><span>Spartan Extreme gym</span></h3>
-              <p>Gym | Yoga</p>
-              <div>
-                <h4>
-                  <i class="fa fa-map-marker" aria-hidden="true"> </i
-                  >&nbsp;Vadodara
-                </h4>
-                <span>
-                  <i class="fa fa-star" aria-hidden="true"></i>&nbsp; 4.5</span
-                >
-              </div>
-              <button class="btn">Monthly @ RS.1000</button>
-              <a href="gym-details-spartan.html">
-                <button class="btn">More Details</button></a
-              >
-            </div>
+        <h3><span>Description</span></h3>
+        <p>
+          Spartan gym - Personal trainer
+        </p>
+        <br />
+        <h3><span>Price</span></h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>Training Price </td>
+              <td> - Rs. 5000/Month</td>
+            </tr>
+            <tr>
+              <td>Training Price </td>
+              <td> - Rs. 13000/3 Months</td>
+            </tr>
+            <tr>
+              <td>Training Price </td>
+              <td> - Rs. 25000/6 Months</td>
+            </tr>
+            <tr>
+              <td>Training Price </td>
+              <td> - Rs. 48000/1 Year</td>
+            </tr>
+            <!-- <tr>
+              <td>Offer Price </td>
+              <td> - $50/Month</td>
+            </tr> -->
+            <tr>
+              <td>Prople Trained </td>
+              <td> - 30</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <h3><span>about</span></h3>
+        <p>
+          Personal Trainer with over 10 yrs experience in fitness industry with
+          diverse background and expertise in Strength Training, Aerobics, Cross
+          fit, flexibility training, yoga, combat sports
+        </p>
+        <h3><span>about the lesson</span></h3>
+        <p>
+          <ol>
+            <li>Personal Trainer with over 10 yrs experience in fitness</li>
+            <li>
+              Personal Trainer with over 10 yrs experience in fitness industry
+            </li>
+            <li>with diverse background and expertise in Strength Training,</li>
+            <li>
+              Aerobics, Cross fit, flexibility training, yoga, combat sports
+            </li>
+          </ol>
+        </p>
+        <h3><span>Review</span></h3>
+        <p>
+          <ol>
+            <li>Personal Trainer with over 10 yrs experience in fitness</li>
+            <li>
+              Personal Trainer with over 10 yrs experience in fitness industry
+            </li>
+            <li>with diverse background and expertise in Strength Training,</li>
+            <li>
+              Aerobics, Cross fit, flexibility training, yoga, combat sports
+            </li>
+          </ol>
+        </p>
+        <div>
+          <p>Cross Fitness</p>
+          <p>Gym</p>
+          <p>Acrobatics</p>
+          <p>Personal Training</p>
+        </div>
+      </article>
+    </section>
+    <section class="container">
+      <div class="yt-slider-container">
+        <h2 class="yt-title">Our Training videos</h2>
+        <div class="yt-slider">
+          <div class="yt-contents">
+            <img src="assets/img/yt3.png" alt="" />
           </div>
-          <div class="gym-card">
-            <img src="./assets/img/gym/stark/stark.jpeg" alt="" />
-            <div>
-              <h3><span>Stark Fitness gym</span></h3>
-              <p>Gym | Yoga</p>
-              <div>
-                <h4>
-                  <i class="fa fa-map-marker" aria-hidden="true"></i
-                  >&nbsp;Vadodara
-                </h4>
-                <span>
-                  <i class="fa fa-star" aria-hidden="true"></i>&nbsp;4.5</span
-                >
-              </div>
-              <button class="btn">Monthly @ RS.1000</button>
-              <a href="gym-details-stark.html">
-                <button class="btn">More Details</button></a
-              >
-            </div>
+          <div class="yt-contents">
+            <img src="assets/img/yt-1.png" alt="" />
           </div>
-          <div class="gym-card">
-            <img src="./assets/img/gym/fitness/fitness.jpg" alt="" />
-            <div>
-              <h3><span>Fitness Track gym</span></h3>
-              <p>Gym | Yoga</p>
-              <div>
-                <h4>
-                  <i class="fa fa-map-marker" aria-hidden="true"></i
-                  >&nbsp;Vadodara
-                </h4>
-                <span>
-                  <i class="fa fa-star" aria-hidden="true"></i>&nbsp;4.5</span
-                >
-              </div>
-              <button class="btn">Monthly @ RS.1000</button>
-              <a href="gym-details-fitness.html">
-                <button class="btn">More Details</button></a
-              >
-            </div>
+          <div class="yt-contents">
+            <img src="assets/img/yt3.png" alt="" />
+          </div>
+          <div class="yt-contents">
+            <img src="assets/img/yt-1.png" alt="" />
           </div>
         </div>
+        <div class="pagination"></div>
       </div>
     </section>
-    <!-- ============ S-OUR-PROGRAMS END ============ -->
-
     <!-- ================== FOOTER ================== -->
     <footer>
       <div class="container">
@@ -338,7 +369,5 @@
     <script src="assets/js/parallax.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="script.js"></script>
-    <script src="script1.js"></script>
-    <script src="youtube-slider.js"></script>
   </body>
 </html>

@@ -263,7 +263,6 @@
   if ($(".triner-card-carousel")[0]) {
     console.log("trainer slider found ");
     $(".triner-card-carousel").not(".slick-initialized").slick({
-      centerPadding: "30px",
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,

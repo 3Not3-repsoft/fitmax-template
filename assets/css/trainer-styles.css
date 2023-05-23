@@ -17,8 +17,9 @@
 }
 
 .triner-card-carousel img {
-  height: 25rem;
-  object-fit: contain;
+  height: 50vh;
+  object-fit: cover;
+  border: 2px solid #f23849;
 }
 
 .triner-card-carousel .slick-track {
