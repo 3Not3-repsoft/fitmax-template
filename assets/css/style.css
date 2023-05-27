@@ -3106,36 +3106,50 @@ blockquote:before {
   flex: 0 0 56%;
   max-width: 56%;
 }
-.about-info-cover .title-decor {
+.mission-info-cover {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.about-info-cover .title-decor,
+.mission-info-cover .title-decor {
   text-align: left;
 }
-.about-info-cover .title-decor:before {
+.about-info-cover .title-decor:before,
+.mission-info-cover .title-decor:before {
   transform: none;
   left: 0;
 }
-.about-info-cover .text a {
+.about-info-cover .text a,
+.mission-info-cover .text a {
   color: #f23849;
 }
-.about-info-cover .text a:hover {
+.about-info-cover .text a:hover,
+.mission-info-cover .text a:hover {
   color: #fff;
 }
-.about-info-cover .text p {
+.about-info-cover .text p,
+.mission-info-cover .text p {
   margin-bottom: 44px;
 }
-.about-info-cover .text p:last-child {
+.about-info-cover .text p:last-child,
+.mission-info-cover .text p:last-child {
   margin-bottom: 0;
 }
-.about-info-cover .social-list li {
+.about-info-cover .social-list li,
+.mission-info-cover .social-list li {
   margin-right: 24px;
 }
-.about-info-cover .social-list li:last-child {
+.about-info-cover .social-list li:last-child,
+.mission-info-cover .social-list li:last-child {
   margin-right: 0;
 }
-.about-info-cover .social-list a {
+.about-info-cover .social-list a,
+.mission-info-cover .social-list a {
   color: #fff;
   font-size: 23px;
 }
-.about-info-cover .social-list a:hover {
+.about-info-cover .social-list a:hover,
+.mission-info-cover .social-list a:hover {
   color: #f23849;
 }
 
@@ -4889,13 +4903,16 @@ blockquote:before {
     max-width: 60%;
   }
 
-  .about-info-cover .social-list li {
+  .about-info-cover .social-list li,
+  .mission-info-cover .social-list li {
     margin-right: 16px;
   }
-  .about-info-cover .social-list a {
+  .about-info-cover .social-list a,
+  .mission-info-cover .social-list a {
     font-size: 18px;
   }
-  .about-info-cover .text p {
+  .about-info-cover .text p,
+  .mission-info-cover .text p {
     margin-bottom: 15px;
   }
 
@@ -5364,7 +5381,7 @@ blockquote:before {
   }
 
   .logo img {
-    max-width: 76px;
+    max-width: 200px;
   }
 
   .crossfit-slide .title {
@@ -5474,7 +5491,8 @@ blockquote:before {
     display: none;
   }
 
-  .about-info-cover {
+  .about-info-cover,
+  .mission-info-cover {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -5497,17 +5515,21 @@ blockquote:before {
     width: 40%;
   }
 
-  .about-info-cover {
+  .about-info-cover,
+  .mission-info-cover {
     text-align: center;
   }
-  .about-info-cover .title-decor {
+  .about-info-cover .title-decor,
+  .mission-info-cover .title-decor {
     text-align: center;
   }
-  .about-info-cover .title-decor:before {
+  .about-info-cover .title-decor:before,
+  .mission-info-cover .title-decor:before {
     left: 50%;
     transform: translateX(-50%);
   }
-  .about-info-cover .social-list {
+  .about-info-cover .social-list,
+  .mission-info-cover .social-list {
     justify-content: center;
   }
 
@@ -5945,7 +5967,7 @@ blockquote:before {
 
 .new-navbar a,
 .new-navbar img {
-  height: 100%;
+  /* height: 100%; */
 }
 
 .switch {

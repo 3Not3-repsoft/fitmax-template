@@ -104,8 +104,8 @@
     display: none;
   }
   .product-grid {
-    grid-template-columns: repeat(1, 1fr);
-    width: 65%;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
   }
   .store-filters > button {
     font-size: 0.8rem;
