@@ -1311,7 +1311,10 @@ footer {
 footer .social-list li {
   margin-right: 18px;
 }
-
+.footer-head {
+  width: 40%;
+  margin-bottom: 10px;
+}
 .footer-item-logo .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
